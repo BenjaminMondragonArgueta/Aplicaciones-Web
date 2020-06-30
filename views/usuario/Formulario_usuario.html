@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+
+  <meta name=”author” content="Benjamin Mondragon Argueta" />
+  <meta name="description" content="Es un sitio de cursos de tecnologia para niños" />
+  <title> System crow </title>
+</head>
+
+<body>
+
+  <style>
+   footer {
+      position: fixed;
+        height: 200px;
+        bottom:  0;
+        width: 100%;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <!--Navbar content-->
+    <a class="nav--brand" href=""> System crow</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collaspe navbar-collapse" id="navbarTex">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav item active">
+          <a href="#" class="nav-link"><span class="sr-only"></span></a>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+            href="file:///C:/Users/admin/Aplicaciones-Web/views/usuario/Formulario_usuario.html#"
+            role="button" aria-haspopup="true" aria-expanded="false">Usuarios</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item"
+              href="file:///C:/Users/admin/Aplicaciones-Web/views/usuario/tablaUsuario.html">Ver usuarios </a>
+          </div>
+        </li>    
+      
+        <li class="nav-item">
+          <a href="file:///C:/Users/admin/Aplicaciones-Web/views/cursos_usuario/Formulario_Cursos_Usuario.html" class="nav-link"> C. Usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/admin/Aplicaciones-Web/views/contenido_visual/Formulario_Contenido_Visuall.html"> C. Visual </a>
+        </li>
+               <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/admin/Aplicaciones-Web/views/contenido_informatico/Formulario_Contenido_Informatico.html"> C. Informatico </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/admin/Aplicaciones-Web/views/comentarios/Formulario_Comentarios.html"> Comentarios </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/admin/Aplicaciones-Web/views/cursos/Formulario_Cursos.html"> cursos </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control" type="search" aria-label="Search">
+        <button class="btn btn-outlone-seccess my-2 mysm-o" type="sybmit">search</button>
+      </form>
+    </div>
+ </nav>
+
+  <h1 class="text-center"> MI PRIMER FORMULARIO CON BOOTSTRAP </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+  <p> Nombre: <input type="text" class="form-control" name="nombre" size="40"></p>
+      </div>
+      <div class="col-md">
+  <p> Apellidos: <input type="text" class="form-control" name="apellidos" size="40"></p>
+      </div></div></div>
+
+      <div class="container">
+        <div class="row">
+      <div class="col-md">
+  <p> Edad: <input type="number" class="form-control" name="edad" min="9"></p>
+      </div>
+          <div class="col-md">
+  <p> Grado Academico: <select name="Grado Academico" class="form-control">
+      <option>Primaria 4to</option>
+      <option>Primaria 5to</option>
+      <option>Primaria 6to</option>
+      <option>Secundaria 1ro</option>
+      <option>Secundaria 2do</option>
+      <option>secundaria 3ro</option>
+      <option>Preparatoria terminad</option>
+      <option>Carrera universitaria terminada</option>
+    </select>
+  </p>
+          </div></div></div>
+          
+          <div class="container">
+            <div class="row">
+          <div class="col-md">
+  <p>Sexo:
+    <input type="radio"  name="hm" value="h"> Hombre
+    <input type="radio"  name="hm" value="m"> Mujer
+  </p>
+          </div>
+          <div class="col-md"> 
+            <p>Rol:
+              <input type="radio"  name="hm" value="A"> Alumno
+              <input type="radio"  name="hm" value="C"> Colaborador
+            </p>
+      
+          </div></div></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md">
+  <p> Contraseña: <input type="password" class="form-control" name="contrasena"></p>
+              </div>
+    
+              <div class="col-md">
+                <p> Correo Electronico: <input type="email" class="form-control" name="Correo" size="40"> </p>
+              </div></div></div>
+              
+  <p class="text-center">
+    <input type="submit" class="btn btn-primary" value="Enviar">
+    <input type="reset" class="btn btn-danger" value="Borrar">
+  </p>
+
+<!-- Footer -->
+<footer class="page-footer font-small dark pt-4 bg-danger">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3 ">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">System Crow</h5>
+        <p> Esto solo es una prueba de footer </p>
+       
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3 " >
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Creadores</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Mondragon Argueta Benjamin </a>
+          </li>
+          <li>
+            <a href="#!">Zarco Alva Adrich</a>
+          </li>
+          <li>
+            <a href="#!">Escobar Basilio Jesrael</a>
+          </li>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Telefonos</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">5548384292</a>
+          </li>
+          <li>
+            <a href="#!">725849322</a>
+          </li>
+          <li>
+            <a href="#!">725844322</a>
+          </li>
+              </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-secondary">© 2020 APLICACIONES WEB:
+    <a href="https://mdbootstrap.com/"> System Crow.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
