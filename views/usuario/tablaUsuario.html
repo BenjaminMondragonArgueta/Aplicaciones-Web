@@ -1,87 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>
-Tabla usuario
-    </title>
-    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
 
-    <body>
-        <style>
-            body {
-                background-color: #c3c3c3;
-            }
-        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
 
-<table border="3">
-<tr>
-       
-    <th> NOMBRE </th>
-    <th> APELLIDOS </th>
-    <th> EDAD </th>
-    <th> GRADO ACADEMICO </th>
-    <th> SEXO </th>
-    <th> ROL </th>
-    <th> CORREO ELECTRONICO </th>
-    <th> CONTRASEÑA </th>
-</tr>
+    <meta name=”author” content="Benjamin Mondragon Argueta">
+    <meta name="description" content="Es un sitio de cursos de tecnologia para niños">
+    <title> Tabla usuario </title>
 
-<tr>
-    <th> Benjamin </th>
-    <th> Mondragon Argueta </th>
-    <th> 12 </th>
-    <th>  6to de primaria</th>
-    <th> Masculino </th>
-    <th> Alumno </th>
-    <th> benrs11@gmail.com </th>
-    <th> patitofeo </th>
-</tr>
+    <script src="https://kit.fontawesome.com/99cd4bbfb0.js" crossorigin="anonymous"></script>
+</head>
 
-<tr>
-    <th> Alberto </th>
-    <th> Rio Luna </th>
-    <th> 10 </th>
-    <th> 5to de primaria </th>
-    <th> Masculino </th>
-    <th> Alumno </th>
-    <th> alberto123@gmail.com </th>
-    <th> betoxdd </th>
-</tr>
+<body>
+    <style>
+        body {
+            background-color: #c3c3c3;
+        }
+    </style>
+    
+    <style>
+        footer {
+            position: fixed;
+            height: 200px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 
-<tr>
-    <th> Martin </th>
-    <th> Iglesias Gonzalez </th>
-    <th> 14 </th>
-    <th> 2do de secundaria </th>
-    <th> Masculino </th>
-    <th> Alumno </th>
-    <th> martin012@gmail.com </th>
-    <th> osito </th>
-</tr>
 
-<tr>
-    <th> Cesar </th>
-    <th> Garcia Garcia </th>
-    <th> 15 </th>
-    <th> 3ero de secundaria </th>
-    <th> Masculino </th>
-    <th> Alumno </th>
-    <th> cesargarciagmail.com</th>
-    <th> niebla </th>
-</tr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <!--Navbar content-->
+        <a class="nav--brand" href=""> System crow</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collaspe navbar-collapse" id="navbarTex">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav item active">
+                    <a href="#" class="nav-link"><span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="file:///C:/Users/admin/Aplicaciones-Web/views/usuario/Formulario_usuario.html"
+                        class="nav-link"> usuario</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="file:///C:/Users/admin/Aplicaciones-Web/views/cursos_usuario/Formulario_Cursos_Usuario.html"
+                        class="nav-link"> C. Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="file:///C:/Users/admin/Aplicaciones-Web/views/contenido_visual/Formulario_Contenido_Visuall.html">
+                        C. Visual </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="file:///C:/Users/admin/Aplicaciones-Web/views/contenido_informatico/Formulario_Contenido_Informatico.html">
+                        C. Informatico </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="file:///C:/Users/admin/Aplicaciones-Web/views/comentarios/Formulario_Comentarios.html">
+                        Comentarios </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="file:///C:/Users/admin/Aplicaciones-Web/views/cursos/Formulario_Cursos.html"> cursos </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control" type="search" aria-label="Search">
+                <button class="btn btn-outlone-seccess my-2 mysm-o" type="sybmit">search</button>
+            </form>
+        </div>
+    </nav>
 
-<tr>
-    <th> Daniela </th>
-    <th> Bolaños Lopez </th>
-    <th> 11 </th>
-    <th> 5to de primaria </th>
-    <th> Femenino </th>
-    <th> Alumno </th>
-    <th> dany@gmail.com </th>
-    <th> spanki </th>
-</tr>
+    <h1 class="text-center">Tabla Usuarios</h1>
 
-</table>
+    <table border="3" class="table table-striped table-dark text-center">
+        <tr>
+<thead>
+            <th> NOMBRE </th>
+            <th> APELLIDOS </th>
+            <th> EDAD </th>
+            <th> GRADO ACADEMICO </th>
+            <th> SEXO </th>
+            <th> ROL </th>
+            <th> CORREO ELECTRONICO </th>
+            <th> CONTRASEÑA </th>
+            <th> Operaciones </th>
+        </thead>
+        </tr>
 
-    </body>
-    </html>
+        <tr>
+            <td> Benjamin </td>
+            <td> Mondragon Argueta </td>
+            <td> 12 </td>
+            <td> 6to de primaria</td>
+            <td> Masculino </td>
+            <td> Alumno </td>
+            <td> benrs11@gmail.com </td>
+            <td> patitofeo </td>
+            <td> 
+                <button class="btn-primary"><i class="fas fa-eye"></i></button> 
+                <button class="btn-secondary"><i class="far fa-edit"></i></button> 
+                <button class="btn-danger"><i class="fas fa-trash-alt"> </i></button> 
+            
+            </td>
+        </tr>
+
+        <tr>
+            <td> Alberto </td>
+            <td> Rio Luna </td>
+            <td> 10 </td>
+            <td> 5to de primaria </td>
+            <td> Masculino </td>
+            <td> Alumno </td>
+            <td> alberto123@gmail.com </td>
+            <td> betoxdd </td>
+            <td> 
+                <button class="btn-primary"><i class="fas fa-eye"></i></button> 
+                <button class="btn-secondary"><i class="far fa-edit"></i></button> 
+                <button class="btn-danger"><i class="fas fa-trash-alt"> </i></button> 
+            
+            </td>
+        </tr>
+
+        <tr>
+            <td> Martin </td>
+            <td> Iglesias Gonzalez </td>
+            <td> 14 </td>
+            <td> 2do de secundaria </td>
+            <td> Masculino </td>
+            <td> Alumno </td>
+            <td> martin012@gmail.com </td>
+            <td> osito </td>
+            <td> 
+                <button class="btn-primary"><i class="fas fa-eye"></i></button> 
+                <button class="btn-secondary"><i class="far fa-edit"></i></button> 
+                <button class="btn-danger"><i class="fas fa-trash-alt"> </i></button> 
+            
+            </td>
+        </tr>
+
+        <tr>
+            <td> Cesar </td>
+            <td> Garcia Garcia </td>
+            <td> 15 </td>
+            <td> 3ero de secundaria </td>
+            <td> Masculino </td>
+            <td> Alumno </td>
+            <td> cesargarciagmail.com</td>
+            <td> niebla </td>
+            <td> 
+                <button class="btn-primary"><i class="fas fa-eye"></i></button> 
+                <button class="btn-secondary"><i class="far fa-edit"></i></button> 
+                <button class="btn-danger"><i class="fas fa-trash-alt"> </i></button> 
+            
+            </td>
+        </tr>
+
+        <tr>
+            <td> Daniela </td>
+            <td> Bolaños Lopez </td>
+            <td> 11 </td>
+            <td> 5to de primaria </td>
+            <td> Femenino </td>
+            <td> Alumno </td>
+            <td> dany@gmail.com </td>
+            <td> spanki </td>
+            <td> 
+                <button class="btn-primary"><i class="fas fa-eye"></i></button> 
+                <button class="btn-secondary"><i class="far fa-edit"></i></button> 
+                <button class="btn-danger"><i class="fas fa-trash-alt"> </i></button> 
+            
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small dark pt-4 bg-danger">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3 ">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">System Crow</h5>
+                    <p> Esto solo es una prueba de footer </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3 ">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Creadores</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Mondragon Argueta Benjamin </a>
+                        </li>
+                        <li>
+                            <a href="#!">Zarco Alva Adrich</a>
+                        </li>
+                        <li>
+                            <a href="#!">Escobar Basilio Jesrael</a>
+                        </li>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Telefonos</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">5548384292</a>
+                        </li>
+                        <li>
+                            <a href="#!">725849322</a>
+                        </li>
+                        <li>
+                            <a href="#!">725844322</a>
+                        </li>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-secondary">© 2020 APLICACIONES WEB:
+            <a href="https://mdbootstrap.com/"> System Crow.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
